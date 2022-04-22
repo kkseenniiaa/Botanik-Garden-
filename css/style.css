@@ -97,7 +97,7 @@ a {
     margin-top: 225px;
 }
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 .title {
     font-family: 'Libre Baskerville';
@@ -153,12 +153,40 @@ a {
     text-transform: capitalize;
 }
 .about{
+    margin-top: 80px;
     background-color: #343D33;
-    margin-top: 100px;
+    padding: 96px 0px;
+}
+.about__container{
+    max-width: 1060px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__img-wrap{
+    width: 100%;
+    height: 354px;
 }
 .about__top-img{
-    width: 534px;
-    height: 354px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about__bottom-img-wrap{
+    width: 100%;
+    height: 409px;
+}
+.about__bottom-img{
+    width: 100%;
+    height: 211px;
+    object-fit: cover;
+}
+.about__desc{
+    width: 417px;
+}
+@media_(max-width: 768px){
+    .about__desc{
+        order: 1
+    }
 }
 .news__subtitle{
     color: #343D33;
@@ -236,4 +264,85 @@ a {
 #img{
     width: 236px;
     height: 151px;
+}
+.footer__top {
+    background-color: #414840;
+    padding-top: 48px;
+    height: 272px;
+}
+.container {
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__column {
+}
+.footer__logo-block {
+}
+.logo {
+    margin: 0;
+}
+.logo__img {
+}
+.logo__pic {
+}
+.logo__text {
+}
+.logo__title {
+    font-size: 18.8959px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.logo__subtitle {
+    font-weight: 400;
+    font-size: 12.3234px;
+    line-height: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+}
+.footer__info {
+    width: 269px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+.footer__subtitle {
+    font-family: 'Libre Baskerville';
+    color: #FFFFFF;
+}
+.footer__nav {
+}
+.footer__nav-list {
+    padding-top: 20px;
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.social__list {
+    display: flex;
+}
+.social__item {
+}
+.social__link {
+}
+.twitter {
+}
+.fb {
+}
+.in {
+}
+.mail {
+}
+.footer__bottom {
+    background-color: #343D33;
+    padding: 29px 0 30px 0;
+    text-align: center;
+    color: #FFFFFF;
 }
