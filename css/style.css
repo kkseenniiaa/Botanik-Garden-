@@ -38,14 +38,16 @@ a {
     margin: 0 auto;
     padding: 0 10px;
 }
+.header{
+    padding: 20px 20px;
+}
 .header__content{
     display: flex;
+    justify-content: space-between;
 }
 .logo{
     display: flex;
-    margin-right: 141px;
-    margin-top: 14px;
-    margin-bottom: 15px;
+    align-items: center;
 }
 .logo__text{
     padding-top: 5px;
@@ -67,11 +69,9 @@ a {
     letter-spacing: 0.01em;
     color: #333333;
 }
-.nav{
-     margin-top: 22px;
-}
 .nav__list{
     display: flex;
+    padding-top: 15px;
 }
 .nav__item{
     padding-right: 40px;
@@ -162,6 +162,12 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.about__top-img-wrap{
+    width: 534px;
+    height: 354px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
 .about__img-wrap{
     width: 100%;
     height: 354px;
@@ -171,22 +177,39 @@ a {
     height: 100%;
     object-fit: cover;
 }
+.btn--white{
+    color: white;
+    border: 2px solid white;
+}
 .about__bottom-img-wrap{
     width: 100%;
     height: 409px;
 }
 .about__bottom-img{
     width: 100%;
-    height: 211px;
+    height: 100%;
     object-fit: cover;
 }
 .about__desc{
     width: 417px;
+    color: white;
 }
 @media_(max-width: 768px){
     .about__desc{
         order: 1
     }
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.about__info{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 52px;
 }
 .news__subtitle{
     color: #343D33;
@@ -280,7 +303,7 @@ a {
 }
 .footer__logo-block {
 }
-.logo {
+.footer .logo {
     margin: 0;
 }
 .logo__img {
@@ -289,13 +312,13 @@ a {
 }
 .logo__text {
 }
-.logo__title {
+.footer .logo__title {
     font-size: 18.8959px;
     line-height: 22px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
-.logo__subtitle {
+.footer .logo__subtitle {
     font-weight: 400;
     font-size: 12.3234px;
     line-height: 14px;
@@ -329,16 +352,31 @@ a {
     display: flex;
 }
 .social__item {
+    margin-right: 32px;
+    margin-top: 20px;
+    width: 24px;
+    height: 24px;
 }
 .social__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
 }
 .twitter {
+    background-image: url(../img/icon/twitter.svg);
 }
 .fb {
+    background-image: url(../img/icon/facebook.svg);
 }
 .in {
+    background-image: url(../img/icon/linkedin.svg);
 }
 .mail {
+    background-image: url(../img/icon/mail.svg);
 }
 .footer__bottom {
     background-color: #343D33;
